@@ -1,0 +1,12 @@
+:root {
+  --accent-colour: #2196f3;
+  --logo-colour: #000;
+  --title-colour: #212121;
+  --description-colour: #757575;
+  --footer-bg: #2f303a;
+  --main-colour: #ffffff;
+  --team-bg: #f5f4fa;
+  --footer-contact: rgba(255, 255, 255, 0.6);
+  --header-line: #ececec;
+  --card-line: #eeeeee;
+}
