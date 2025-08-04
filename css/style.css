@@ -10,3 +10,216 @@
   --header-line: #ececec;
   --card-line: #eeeeee;
 }
+body {
+
+ font-family: Roboto;
+
+};
+
+.header-logo{
+    color: var(--accent-colour);
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+
+.header-logo{
+     color: var(--accent-colour);
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.header-span{
+ color: var(--logo-colour);
+}
+
+.header-link{
+color: var(--title-colour);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.header-link:hover {
+  color: var(--accent-colour);
+}
+
+.header-gmail{
+  color: var(--description-colour);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+}
+
+.header-gmail:hover {
+color: var(--accent-colour);
+}
+
+
+.buisness{
+  background-color: var(--footer-bg);
+}
+
+.buisness-title{
+  color: var(--main-colour);
+text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 1.36; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
+}
+
+.buisness-btn{
+  color: var(--main-colour);
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.96px;
+border-radius: 4px;
+background: var(--accent-colour);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.hero-title{
+  color: var(--title-colour);
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.hero-desc{
+  color: var(--description-colour);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+
+
+
+.thingswedo-title{
+  color: var(--title-colour);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+}
+
+
+
+
+.ourteam{
+  background-color: var(--team-bg);
+}
+.ourteam-title{
+  color: var(--title-colour);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+}
+.ourteam-desc{
+  color: var(--title-colour);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.18;
+letter-spacing: 0.48px;
+}
+.ourteam-text{
+  color: var(--description-colour);
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.18;
+letter-spacing: 0.48px;
+}
+
+
+
+
+.footer{
+  background-color: var(--footer-bg);
+}
+.footer-logo{
+  color: var(--accent-colour);
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+.footer-span{
+  color: var(--main-colour);
+}
+.footer-adresslink{
+  color: var(--main-colour);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+.footer-gmail{
+  color: var(--footer-contact);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
+
+
+/* portfolio */
+
+
+
+
+.cart-btn{
+  color: var(--title-colour);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.62; /* 162.5% */
+letter-spacing: 0.48px;
+border-radius: 4px;
+background: var(--team-bg);
+}
+.cart-btn:hover{
+  color: var(--main-colour);
+  background-color: var(--accent-colour);
+}
+.cart-title{
+  color: var(--title-colour);
+font-size: 18px;
+font-weight: 700;
+line-height: 2.00; /* 200% */
+letter-spacing: 1.08px;
+}
+.cart-desc{
+  color: var(--description-colour);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.48px;
+}
+.cart-elem{
+border: 1px solid #EEE;
+background: #FFF;
+}
