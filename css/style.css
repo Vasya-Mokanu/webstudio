@@ -12,13 +12,18 @@
 }
 .container{
   outline: 1px solid red;
-  
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 body {
 
  font-family: Roboto;
 
 };
+
 
 .header-logo{
     color: var(--accent-colour);
@@ -42,7 +47,10 @@ letter-spacing: 0.78px;
 .header-span{
  color: var(--logo-colour);
 }
-
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-link{
 color: var(--title-colour);
 font-size: 14px;
@@ -70,6 +78,8 @@ color: var(--accent-colour);
 
 .buisness{
   background-color: var(--footer-bg);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .buisness-title{
@@ -94,7 +104,10 @@ background: var(--accent-colour);
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-
+.hero{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 
 .hero-title{
@@ -114,7 +127,10 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
-
+.thingswedo{
+ 
+  padding-bottom: 94px;
+}
 
 
 .thingswedo-title{
@@ -131,6 +147,8 @@ letter-spacing: 1.08px;
 
 .ourteam{
   background-color: var(--team-bg);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .ourteam-title{
   color: var(--title-colour);
@@ -162,6 +180,8 @@ letter-spacing: 0.48px;
 
 .footer{
   background-color: var(--footer-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo{
   color: var(--accent-colour);
@@ -193,7 +213,10 @@ letter-spacing: 0.42px;
 /* portfolio */
 
 
-
+.cart{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .cart-btn{
   color: var(--title-colour);
