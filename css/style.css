@@ -117,6 +117,7 @@ font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
+display: flex;
 }
 
 .hero-desc{
@@ -125,11 +126,13 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+display: flex;
 }
 
 .thingswedo{
- 
+
   padding-bottom: 94px;
+display: flex;
 }
 
 
