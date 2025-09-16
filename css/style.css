@@ -320,4 +320,5 @@ letter-spacing: 0.48px;
 .cart-elem{
 outline: 1px solid #EEE;
 background: #FFF;
+flex-basis: calc((100% - 60px)/3);
 }
