@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-   <header class="header">
-    <div class="container">
+    <header class="header">
+      <div class="container">
       <a class="header-logo" href="../index.html">Web<span class="header-span">Studio</span></a>
       <nav class="header-list">
         <ul class="header-items">
@@ -24,8 +24,13 @@
         </ul>
       </nav>
       <ul class="header-lists">
-        <li class="header-elem"><a class="header-gmail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="header-elem"><a class="header-gmail" href="tel:+380961111111">+38 096 111 11 11</a></li>
+
+        <li class="header-elem"><a class="header-gmail" href="mailto:info@devstudio.com"><svg class="header-whitemail">
+          <use href="../img/symbol-defs.svg#whitemail"></use>
+        </svg> info@devstudio.com</a></li>
+        <li class="header-elem"><a class="header-gmail" href="tel:+380961111111"><svg class="header-phone">
+          <use href="../img/symbol-defs.svg#phone"></use>
+        </svg>+38 096 111 11 11</a></li>
       </ul>
       </div>
     </header>
@@ -76,7 +81,7 @@
       </div>
     </li>
     <li class="cart-elem">
-      <img class="cart-img" src="../img/comp.webp" alt="comp">
+      <img class="cart-img" src="../img/monitor.webp" alt="comp">
       <div class="cart-wrap">
       <h2 class="cart-title">Inspiration has no Borders</h2>
       <p class="cart-desc">Веб-сайт</p>
@@ -108,8 +113,10 @@
 </section>
     </main>
      
-<footer class="footer">
-  <div class="container">
+    <footer class="footer">
+      <div class="container footer-box">
+        <div class="footer-wrap">
+
       <a class="footer-logo" href="../index.html">Web<span class="footer-span">Studio</span></a>
       <address class="footer-adress">
         <a class="footer-adresslink"
@@ -122,6 +129,41 @@
           <li class="footer-item"><a class="footer-gmail" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+
+      </div>
+      <div class="footer-wrapper">
+        <h2 class="footer-title">приєднуйтесь</h2>
+        <ul class="footer-list">
+          <li class="footer-elem">
+            <a href="" class="footer-link">
+              <svg class="footer-icon">
+                <use href="../img/symbol-defs.svg#insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-elem">
+            <a href="" class="footer-link">
+              <svg class="footer-icon">
+                <use href="../img/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-elem">
+            <a href="" class="footer-link">
+              <svg class="footer-icon">
+                <use href="../img/symbol-defs.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-elem">
+            <a href="" class="footer-link">
+              <svg class="footer-icon">
+                <use href="../img/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
     </footer>
   </body>
