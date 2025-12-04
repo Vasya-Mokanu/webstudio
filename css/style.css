@@ -231,6 +231,10 @@ margin-bottom: 50px;
   gap: 30px;
 }
 
+.wrap{
+  position: relative;
+}
+
 .thingswedo-desc{
    font-size: 30px;
     color: var(--main-colour);
