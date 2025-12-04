@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    
     <header class="header">
+      <a class="scroll-top" href="#qwerty"><svg class="scroll-icon">
+        <use href="./img/symbol-defs.svg#icon-arrowup"></use>
+      </svg></a>
       <div class="container">
       <a class="header-logo" href="./index.html">Web<span class="header-span">Studio</span></a>
       <nav class="header-list">
@@ -37,7 +41,7 @@
       </div>
     </header>
     <main>
-      <section class="buisness">
+      <section id="qwerty" class="buisness">
         <div class="container">
         <h1 class="buisness-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="buisness-btn" type="button">Замовити послугу</button>
@@ -80,9 +84,24 @@
         <div class="container">
         <h2 class="thingswedo-title">Чим ми займаємося</h2>
         <ul class="thingswedo-items">
-          <li class="thingswedo-item"><img class="thingswedo-img" src="./img/comp.webp" alt="comp" /></li>
-          <li class="thingswedo-item"><img class="thingswedo-img" src="./img/tel.webp" alt="tel" /></li>
-          <li class="thingswedo-item"><img class="thingswedo-img" src="./img/tablet.webp" alt="tablet" /></li>
+          <li class="thingswedo-item">
+            <div class="wrap">
+            <img class="thingswedo-img" src="./img/comp.webp" alt="comp"/>
+            <p class="thingswedo-desc">Десктопні додатки</p>
+          </div>
+        </li>
+        <li class="thingswedo-item">
+            <div class="wrap">
+            <img class="thingswedo-img" src="./img/tel.webp" alt="tel"/>
+            <p class="thingswedo-desc">Мобільні додатки</p>
+          </div>
+        </li>
+          <li class="thingswedo-item">
+            <div class="wrap">
+            <img class="thingswedo-img" src="./img/tablet.webp" alt="tablet"/>
+            <p class="thingswedo-desc">Дизайнерські рішення</p>
+          </div>
+        </li>
         </ul>
         </div>
       </section>
