@@ -44,7 +44,7 @@
       <section id="qwerty" class="buisness">
         <div class="container">
         <h1 class="buisness-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="buisness-btn" type="button">Замовити послугу</button>
+        <button class="buisness-btn" data-modal-open type="button">Замовити послугу</button>
         </div>
       </section>
       <section class="hero">
@@ -275,5 +275,37 @@
       </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-close" data-modal-close type="button"><svg class="modal-x">
+          <use href="./img/symbol-defs.svg#close"></use>
+        </svg></button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label class="modal-label">Ім'я
+            <input class="modal-input" required type="text">
+            <svg class="modal-svg">
+              <use href="./img/symbol-defs.svg#person"></use>
+            </svg>
+          </label>
+          <label class="modal-label">Телефон
+            <input class="modal-input" pattern="^\+49\d{11}$" required type="tel">
+          </label>
+          <label class="modal-label">Пошта
+            <input class="modal-input" required type="email">
+          </label>
+          <label class="modal-label">Коментар
+            <textarea placeholder="Введіть текст" class="modal-comment"></textarea>
+          </label>
+          <div class="modal-box">
+            <input class="modal-check" required type="checkbox">
+            <span class="modal-text">Погоджуюся з розсилкою та приймаю</span>
+            <a class="modal-link" href="">Умови договору</a>
+          </div>
+          <button class="modal-btn" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
