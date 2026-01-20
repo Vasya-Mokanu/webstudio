@@ -1,0 +1,41 @@
+@use "../base/var" as *;
+.thingswedo{
+  padding-bottom: 94px;
+}
+
+
+.thingswedo-title{
+  color: $title-colour;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+margin-bottom: 50px;
+}
+.thingswedo-items{
+  display: flex;
+  gap: 30px;
+}
+
+.wrap{
+  position: relative;
+}
+
+.thingswedo-desc{
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+   font-size: 14px;
+    color: $main-colour;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: $thingswedo-bg;
+    width: 100%;
+}

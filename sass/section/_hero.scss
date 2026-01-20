@@ -1,0 +1,55 @@
+@use "../base/var" as *;
+.hero{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.hero-list{
+  display: flex;
+  gap: 30px;
+}
+
+.hero-title{
+  color: $title-colour;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+.hero-item::before{
+content: "";
+width: 270px;
+height: 120px;
+display: block;
+background-color: $team-bg;
+border-radius: 4px;
+margin-bottom: 30px;
+background-image: url(../img/antenna1.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 70px 70px;
+}
+
+.hero-item:nth-child(2)::before{
+  background-image: url(../img/clock1.png);
+}
+
+.hero-item:nth-child(3)::before{
+  background-image: url(../img/diagram1.png);
+}
+
+.hero-item:nth-child(4)::before{
+  background-image: url(../img/astronaut.png);
+}
+
+
+
+.hero-desc{
+  color: $description-colour;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
