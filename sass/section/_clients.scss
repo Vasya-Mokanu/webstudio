@@ -3,9 +3,8 @@
   background-color: $main-colour;
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients-title{
+  &__title{
   color: $title-colour;
 text-align: center;
 font-size: 36px;
@@ -15,12 +14,12 @@ letter-spacing: 1.08px;
 margin-bottom: 50px;
 }
 
-.clients-list{
+&__list{
   display: flex;
   gap: 30px;
 }
 
-.clients-link{
+&__link{
   width: 170.0px;
 height: 92.0px;
 border-radius: 4px;
@@ -31,16 +30,16 @@ justify-content: center;
 transition-property: border;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-link:hover{
+&:hover{
   border: 1px solid $accent-colour;
-  .clients-icon{
+  .clients__icon{
     fill: $accent-colour;
   }
 }
+}
 
-.clients-icon{
+&__icon{
   width: 106px;
   height: 60px;
   fill: $svg-colour;
@@ -48,3 +47,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
+
+
+
+
+
+
+
+

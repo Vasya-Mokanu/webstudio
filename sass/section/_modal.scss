@@ -38,9 +38,8 @@ padding: 40px;
 transition-property: transform;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-close{
+&__close{
   width: 30.0px;
 height: 30.0px;
 border-radius: 50%;
@@ -53,15 +52,15 @@ background-color: transparent;
 position: absolute;
 top: 8px;
 right: 8px;
-}
 
-.modal-close:hover{
-  .modal-x{
+&:hover{
+  .modal__x{
     fill: $accent-colour;
   }
 }
+}
 
-.modal-x{
+&__x{
 width: 11.0px;
 height: 11.0px;
 transition-property: fill;
@@ -69,7 +68,7 @@ transition-duration: 450ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-title{
+&__title{
   color: $title-colour;
 text-align: center;
 font-size: 20px;
@@ -79,7 +78,7 @@ letter-spacing: 0.6px;
 margin-bottom: 12px;
 }
 
-.modal-label{
+&__label{
   color: $description-colour;
 font-size: 12px;
 font-weight: 400;
@@ -90,16 +89,7 @@ display: block;
 position: relative;
 }
 
-.modal-lab{
-  color: $description-colour;
-font-size: 12px;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.12px;
-display: block;
-}
-
-.modal-input{
+&__input{
   display: block;
   border-radius: 4px;
 outline: 1px solid $modal-input;
@@ -114,13 +104,17 @@ margin-top: 4px;
 transition-property: outline;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-input:hover{
+&:hover{
 outline: 1px solid $accent-colour;
 }
 
-.modal-svg{
+&:hover + .modal__svg{
+  fill: $accent-colour;
+}
+}
+
+&__svg{
   fill: $title-colour;
   width: 12.0px;
 height: 12.0px;
@@ -132,11 +126,16 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .modal-svg{
-  fill: $accent-colour;
+&__lab{
+  color: $description-colour;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+display: block;
 }
 
-.modal-comment{
+&__comment{
   resize: none;
   width: 100%;
 height: 120px;
@@ -147,7 +146,7 @@ padding: 12px 16px;
 margin-top: 4px;
 }
 
-.modal-box{
+&__box{
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
@@ -156,14 +155,13 @@ margin-top: 4px;
   align-items: center;
 }
 
-.modal-check{
+&__check{
   fill: $title-colour;
 width: 16.0px;
 height: 15.0px;
-
 }
 
-.modal-text{
+&__text{
   color: $description-colour;
 font-size: 14px;
 font-weight: 400;
@@ -173,7 +171,7 @@ margin-left: 8.38px;
 margin-right: 3px;
 }
 
-.modal-link{
+&__link{
   color: $accent-colour;
 font-size: 14px;
 font-weight: 400;
@@ -187,7 +185,7 @@ text-underline-offset: auto;
 text-underline-position: from-font;
 }
 
-.modal-btn{
+&__btn{
   color: $main-colour;
 text-align: center;
 font-size: 16px;
@@ -208,4 +206,5 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 30px;
+}
 }

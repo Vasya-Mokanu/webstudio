@@ -1,15 +1,23 @@
 @use "../base/var" as *;
-.header-logo{
-    color: $accent-colour;
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
+
+
+
+
+
+
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $header-line;
+  /* position: fixed;
+  width: 100%; */
+
+  & .container{
+  display: flex;
+  align-items: center;
 }
 
-
-.header-logo{
+  &__logo{
      color: $accent-colour;
 font-family: Raleway;
 font-size: 26px;
@@ -19,31 +27,20 @@ letter-spacing: 0.78px;
 margin-right: 93px;
 }
 
-.header-span{
+&__span{
  color: $logo-colour;
 }
-.header-items{
+
+&__items{
   display: flex;
   gap: 50px;
 }
 
-.header{
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid $header-line;
-  /* position: fixed;
-  width: 100%; */
-}
-.header .container{
-  display: flex;
-  align-items: center;
-}
-
-.header-item{
+&__item{
   position: relative;
 }
 
-.header-link{
+&__link{
 color: $title-colour;
 font-size: 14px;
 font-weight: 500;
@@ -52,18 +49,15 @@ letter-spacing: 0.28px;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover {
+&:hover {
   color: $accent-colour;
 }
-
-.header-link:hover:after{
+&:hover:after{
   opacity: 1;
   transform: scale(1);
 }
 
-.header-link:after{
+&:after{
   display: block;
   content: "";
 position: absolute;
@@ -80,36 +74,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transform: scale(0);
 }
 
-.header-lists{
+}
+
+&__lists{
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
 
-.header-whitemail{
-  width: 16px;
-  height: 12px;
-  fill: $description-colour;
-  transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-whitemail:hover{
-  fill: $accent-colour;
-}
-
-.header-phone{
-  width: 10.0px;
-height: 16.0px;
-fill: $description-colour;
-transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.header-gmail{
+&__gmail{
   color: $description-colour;
 font-size: 14px;
 font-weight: 500;
@@ -121,14 +94,60 @@ gap: 11px;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover {
+color: $accent-colour;
+.header__whitemail{
+  fill: $accent-colour;
+}
+.header__phone{
+  fill: $accent-colour;
+}
+}
 }
 
-.header-gmail:hover {
-color: $accent-colour;
-.header-whitemail{
+&__whitemail{
+  width: 16px;
+  height: 12px;
+  fill: $description-colour;
+  transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover{
   fill: $accent-colour;
 }
-.header-phone{
-  fill: $accent-colour;
+}
+
+&__phone{
+  width: 10.0px;
+height: 16.0px;
+fill: $description-colour;
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

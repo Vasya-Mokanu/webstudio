@@ -2,6 +2,7 @@
 @use "./base/container";
 @use "./base/common";
 @use "./base/var";
+@use "./section/scroll";
 @use "./section/header";
 @use "./section/buisness";
 @use "./section/hero";
@@ -11,4 +12,3 @@
 @use "./section/footer";
 @use "./section/cart";
 @use "./section/modal";
-@use "./section/scroll";

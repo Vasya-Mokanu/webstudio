@@ -8,9 +8,8 @@
   background-repeat: no-repeat;
   background-position:center ;
   background-size: cover;
-}
 
-.buisness-title{
+  &__title{
   color: $main-colour;
 text-align: center;
 font-size: 44px;
@@ -26,7 +25,7 @@ position: sticky;
 top: 0;
 }
 
-.buisness-btn{
+&__btn{
   color: $main-colour;
 text-align: center;
 font-size: 16px;
@@ -38,3 +37,8 @@ background: $accent-colour;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 padding: 10px 32px;
 }
+
+}
+
+
+

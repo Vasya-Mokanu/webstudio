@@ -1,10 +1,8 @@
 @use "../base/var" as *;
 .thingswedo{
   padding-bottom: 94px;
-}
 
-
-.thingswedo-title{
+  &__title{
   color: $title-colour;
 text-align: center;
 font-size: 36px;
@@ -13,16 +11,17 @@ line-height: 1.16;
 letter-spacing: 1.08px;
 margin-bottom: 50px;
 }
-.thingswedo-items{
+
+&__items{
   display: flex;
   gap: 30px;
 }
 
-.wrap{
+&__wrap{
   position: relative;
-}
 
-.thingswedo-desc{
+}
+&__desc{
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
@@ -39,3 +38,11 @@ text-transform: uppercase;
     background: $thingswedo-bg;
     width: 100%;
 }
+}
+
+
+
+
+
+
+
