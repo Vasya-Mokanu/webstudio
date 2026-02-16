@@ -1,6 +1,6 @@
 @use "../base/var" as *;
-
-
+@use "../utils/placeholder" as *;
+@use "../utils/mixin" as *;
 
 
 
@@ -32,8 +32,9 @@ margin-right: 93px;
 }
 
 &__items{
-  display: flex;
-  gap: 50px;
+  // display: flex;
+  // gap: 50px;
+  @include flexbox($gap:50px);
 }
 
 &__item{
@@ -47,8 +48,7 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 &:hover {
   color: $accent-colour;
 }
@@ -69,8 +69,7 @@ opacity: 0;
 left: 0;
 bottom: -33px;
 transition-property: opacity, transform;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 transform: scale(0);
 }
 
@@ -88,12 +87,12 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
-display: flex;
-align-items: center;
-gap: 11px;
+// display: flex;
+// align-items: center;
+// gap: 11px;
+@include flexbox($gap:11px);
 transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 &:hover {
 color: $accent-colour;
 .header__whitemail{
@@ -110,8 +109,7 @@ color: $accent-colour;
   height: 12px;
   fill: $description-colour;
   transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 &:hover{
   fill: $accent-colour;
 }
@@ -122,8 +120,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 height: 16.0px;
 fill: $description-colour;
 transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 }
 }
 

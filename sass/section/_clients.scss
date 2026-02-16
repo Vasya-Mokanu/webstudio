@@ -1,4 +1,6 @@
 @use "../base/var" as *;
+@use "../utils/placeholder" as *;
+@use "../utils/mixin" as *;
 .clients{
   background-color: $main-colour;
   padding-top: 94px;
@@ -24,13 +26,12 @@ margin-bottom: 50px;
 height: 92.0px;
 border-radius: 4px;
 border: 1px solid $svg-colour;
-display: flex;
-align-items: center;
-justify-content: center;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+@include flexbox($gap:0px);
 transition-property: border;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+@extend %animations;
 &:hover{
   border: 1px solid $accent-colour;
   .clients__icon{
@@ -44,8 +45,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 60px;
   fill: $svg-colour;
   transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 }
 }
 

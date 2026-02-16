@@ -1,4 +1,6 @@
 @use "../base/var" as *;
+@use "../utils/placeholder" as *;
+@use "../utils/mixin" as *;
 .footer{
   background-color: $footer-bg;
   padding-top: 60px;
@@ -34,9 +36,10 @@ letter-spacing: 0.42px;
 
 &__items{
   margin-top: 9px;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 9px;
+  @include flexbox($gap:9px, $direction:column, $align:start);
 }
 
 &__gmail{
@@ -72,12 +75,12 @@ margin-bottom: 20px;
 height: 44.0px;
 border-radius: 50%;
 background-color: $link-bcg;
-display: flex;
-align-items: center;
-justify-content: center;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+@include flexbox($gap:0px);
 transition-property: background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 
 &:hover{
   background-color: $accent-colour;
@@ -91,9 +94,10 @@ fill: $main-colour;
 }
 
 &__form{
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  // display: flex;
+  // align-items: center;
+  // gap: 12px;
+  @include flexbox($gap:12px);
 }
 
 &__email{
@@ -127,9 +131,10 @@ padding-right: 28px;
 padding-bottom: 10px;
 padding-left: 28px;
 border: none;
-display: flex;
-align-items: center;
-gap: 10px;
+// display: flex;
+// align-items: center;
+// gap: 10px;
+@include flexbox($gap:10px);
 }
 
 &__send{

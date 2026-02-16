@@ -1,13 +1,16 @@
 
 @use "../base/var" as *;
+@use "../utils/placeholder" as *;
+@use "../utils/mixin" as *;
 .cart{
   padding-top: 94px;
   padding-bottom: 94px;
 
 &__list{
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+  // display: flex;
+  // justify-content: center;
+  // gap: 8px;
+  @include flexbox($gap:8px);
   margin-bottom: 50px;
 }
 
@@ -23,9 +26,7 @@ background: $team-bg;
 border: transparent;
 padding: 6px 22px;
 transition-property: color, box-shadow, background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+@extend %animations;
 &:hover{
   color: $main-colour;
   background-color: $accent-colour;
@@ -34,9 +35,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &__items{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
+  @include flexbox();
 }
 
 &__elem{
@@ -44,9 +46,7 @@ outline: 1px solid $card-line;
 background: $main-colour;
 flex-basis: calc((100% - 60px)/3);
 transition-property: box-shadow;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+@extend %animations;
 &:hover{
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
   .cart__description{
@@ -75,8 +75,7 @@ height: 100%;
 padding: 63px 24px;
 opacity: 0;
 transition-property: opacity, transform;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %animations;
 transform: translateY(100%)
 }
 
