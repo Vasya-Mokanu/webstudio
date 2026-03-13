@@ -3,22 +3,34 @@
 @use "../utils/mixin" as *;
 .ourteam{
   background-color: $team-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
+}
 
   &__title{
   color: $title-colour;
 text-align: center;
-font-size: 36px;
+font-size: 28px;
 font-weight: 700;
 line-height: 1.16;
-letter-spacing: 1.08px;
-margin-bottom: 50px;
+letter-spacing: 0.84px;
+margin-bottom: 30px;
+
+@media screen and (min-width:1200px) {
+  letter-spacing: 1.08px;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
 }
 
 &__items{
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 &__item{
@@ -27,8 +39,19 @@ margin-bottom: 50px;
 }
 
 &__img{
+  width: 100%;
+
+@media screen and (min-width:480px) {
+  width: 450px;
+}
+
+@media screen and (min-width:768px) {
+  width: 354px;
+}
+
+@media screen and (min-width:1200px) {
   width: 270px;
-height: 260px;
+}
 }
 
 &__wrap{
