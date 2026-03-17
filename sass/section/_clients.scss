@@ -3,26 +3,51 @@
 @use "../utils/mixin" as *;
 .clients{
   background-color: $main-colour;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title{
   color: $title-colour;
 text-align: center;
-font-size: 36px;
+font-size: 28px;
 font-weight: 700;
 line-height: normal;
-letter-spacing: 1.08px;
-margin-bottom: 50px;
+letter-spacing: 0.84px;
+margin-bottom: 30px;
+
+@media screen and (min-width:1200px) {
+    letter-spacing: 1.08px;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 &__list{
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+&__item{
+  flex-basis: calc((100% - 30px)/2);
+
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 60px)/3);
+  }
+
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 150px)/6);
+  }
 }
 
 &__link{
-  width: 170.0px;
+  width: 100%;
 height: 92.0px;
 border-radius: 4px;
 border: 1px solid $svg-colour;
@@ -32,6 +57,19 @@ border: 1px solid $svg-colour;
 @include flexbox($gap:0px);
 transition-property: border;
 @extend %animations;
+
+@media screen and (min-width:480px) {
+    width: 210px;
+  }
+
+@media screen and (min-width:768px) {
+    width: 226px;
+  }
+
+@media screen and (min-width:1200px) {
+    width: 170px;
+  }
+
 &:hover{
   border: 1px solid $accent-colour;
   .clients__icon{
@@ -48,12 +86,3 @@ transition-property: border;
 @extend %animations;
 }
 }
-
-
-
-
-
-
-
-
-

@@ -9,21 +9,47 @@
 &__box{
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+&__wrap{
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+    text-align: start;
+  }
 }
 
 &__logo{
   color: $accent-colour;
 font-family: Raleway;
-font-size: 26px;
+font-size: 24px;
 font-weight: 700;
 line-height: 1.38;
-letter-spacing: 0.78px;
+letter-spacing: 0.72px;
 margin-bottom: 20px;
 display: inline-block;
+
+@media screen and (min-width:1200px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 
 &__span{
   color: $main-colour;
+}
+
+&__adress{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width:1200px) {
+    align-items: start;
+  }
 }
 
 &__adresslink{
@@ -35,11 +61,16 @@ letter-spacing: 0.42px;
 }
 
 &__items{
-  margin-top: 9px;
+  margin-top: 8px;
   // display: flex;
   // flex-direction: column;
   // gap: 9px;
-  @include flexbox($gap:9px, $direction:column, $align:start);
+  @include flexbox($gap:8px, $direction:column, $align:start);
+
+  @media screen and (min-width:1200px) {
+    @include flexbox($gap:9px, $direction:column, $align:start);
+    margin-top: 9px;
+  }
 }
 
 &__gmail{
@@ -51,8 +82,19 @@ letter-spacing: 0.42px;
 }
 
 &__wrapper{
-  margin-left: 70px;
+
+  text-align: center;
+  
+  @media screen and (min-width:768px) {
+    margin-left: 165px;
+   
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-left: 70px;
   margin-right: auto;
+  text-align: start;
+  }
 }
 
 &__title{
@@ -91,6 +133,14 @@ transition-property: background-color;
   width: 20.0px;
 height: 20.0px;
 fill: $main-colour;
+}
+
+&__subscribewrap{
+text-align: center;
+
+@media screen and (min-width:1200px) {
+  text-align: start;
+}
 }
 
 &__form{
