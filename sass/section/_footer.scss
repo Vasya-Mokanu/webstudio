@@ -8,9 +8,24 @@
 
 &__box{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width:768px) {
+   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row; 
+  }
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
 }
 
 &__wrap{
@@ -84,16 +99,18 @@ letter-spacing: 0.42px;
 &__wrapper{
 
   text-align: center;
+  margin-top: 60px;
   
   @media screen and (min-width:768px) {
     margin-left: 165px;
-   
+   margin-top: 0;
   }
 
   @media screen and (min-width:1200px) {
     margin-left: 70px;
   margin-right: auto;
   text-align: start;
+  margin-top: 0;
   }
 }
 
@@ -137,9 +154,11 @@ fill: $main-colour;
 
 &__subscribewrap{
 text-align: center;
+margin-top: 60px;
 
 @media screen and (min-width:1200px) {
   text-align: start;
+  margin-top: 0;
 }
 }
 
@@ -147,7 +166,18 @@ text-align: center;
   // display: flex;
   // align-items: center;
   // gap: 12px;
-  @include flexbox($gap:12px);
+  @include flexbox($gap:20px);
+
+  @media screen and (min-width:768px) {
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+      flex-direction: unset;
+      align-items: start;
+      gap: 12px;
+    }
+  }
 }
 
 &__email{
@@ -162,8 +192,20 @@ border: 1px solid $footer-email;
 background: $bcg-email;
 box-shadow: 0 4px 4px 0 $shadow;
 padding-left: 16px;
-width: 358.0px;
+width: 100%;
 height: 50.0px;
+
+@media screen and (min-width:480px) {
+  width: 450px;
+}
+
+@media screen and (min-width:768px) {
+  width: 450px;
+}
+
+@media screen and (min-width:1200px) {
+  width: 358px;
+}
 }
 
 &__btn{

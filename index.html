@@ -26,13 +26,59 @@
   </head>
   <body>
     <header class="header">
-      
       <div class="container">
         <a
           class="header__logo animate__animated animate__fadeIn"
           href="./index.html"
           >Web<span class="header__span">Studio</span></a
         >
+        <button type="button" class="header__menu" data-menu-open>
+          <svg class="header__burger">
+            <use href="./img/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu is-hidden" data-menu>
+          <button type="button" class="menu__close" data-menu-close>
+            <svg class="menu__x">
+              <use href="./img/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu_item">
+              <a href="./index.html" class="menu__link">Студія</a>
+            </li>
+            <li class="menu_item">
+              <a href="./pages/portfolio.html" class="menu__link">Портфоліо</a>
+            </li>
+            <li class="menu_item">
+              <a href="" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="menu__items">
+            <li class="menu__elem">
+              <a href="" class="menu_gmail">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__elem">
+              <a href="" class="menu_gmail">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu__elements">
+            <li class="menu_element">
+              <a href="" class="menu__social">Instagram</a>
+            </li>
+            <li class="menu_element">
+              <a href="" class="menu__social">Twitter</a>
+            </li>
+            <li class="menu_element">
+              <a href="" class="menu__social">Facebook</a>
+            </li>
+            <li class="menu_element">
+              <a href="" class="menu__social">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
         <nav class="header__list">
           <ul class="header__items">
             <li class="header__item">
@@ -550,10 +596,12 @@
         </form>
       </div>
     </div>
-    <a class="scroll-top" href="#qwerty"><svg class="scroll-icon">
-          <use href="./img/symbol-defs.svg#icon-arrowup"></use></svg
-      ></a>
+    <a class="scroll-top" href="#qwerty"
+      ><svg class="scroll-icon">
+        <use href="./img/symbol-defs.svg#icon-arrowup"></use></svg
+    ></a>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

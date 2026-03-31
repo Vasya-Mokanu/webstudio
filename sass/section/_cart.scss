@@ -3,15 +3,27 @@
 @use "../utils/placeholder" as *;
 @use "../utils/mixin" as *;
 .cart{
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
 &__list{
-  // display: flex;
-  // justify-content: center;
-  // gap: 8px;
-  @include flexbox($gap:8px);
+  display: flex;
+  gap: 8px;
+  row-gap: 15px;
+  // @include flexbox($gap:8px);
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  @media screen and (min-width:768px) {
+    justify-content: center;
+
+  }
 }
 
 &__btn{
@@ -38,13 +50,13 @@ transition-property: color, box-shadow, background-color;
   // display: flex;
   // flex-wrap: wrap;
   // gap: 30px;
-  @include flexbox();
+  @include flexbox($justify:start);
 }
 
 &__elem{
 outline: 1px solid $card-line;
 background: $main-colour;
-flex-basis: calc((100% - 60px)/3);
+flex-basis: 100%;
 transition-property: box-shadow;
 @extend %animations;
 &:hover{
@@ -53,6 +65,19 @@ transition-property: box-shadow;
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+@media screen and (min-width:480px) {
+  flex-basis: 450px;
+}
+
+@media screen and (min-width:768px) {
+  flex-basis: calc((100% - 30px)/2);
+}
+
+@media screen and (min-width:1200px) {
+  flex-basis: calc((100% - 60px)/3);
 }
 }
 

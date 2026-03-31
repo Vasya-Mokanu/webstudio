@@ -47,6 +47,22 @@ margin-right: auto;
   }
 }
 
+&__menu{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+
+&__burger{
+  width: 40px;
+  height: 40px;
+}
+
 &__span{
  color: $logo-colour;
 }

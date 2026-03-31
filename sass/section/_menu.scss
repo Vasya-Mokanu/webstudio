@@ -1,0 +1,38 @@
+@use "../base/var" as *;
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-colour;
+    z-index: 1;
+    opacity: 1;
+    padding-top: 48px;
+    padding-left: 40px;
+
+    &__close{
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: none;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__x{
+        width: 40px;
+        height: 40px;
+        fill: $title-colour;
+    }
+}
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
